@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication8
+namespace BiosensorSensitivityCalculator
 {
     public class Constants2
     {
@@ -18,13 +18,13 @@ namespace ConsoleApplication8
         public double r1;
         public double r2;
         public double r3;
-        public double Faradejus = 96485; ///C/mol
+        public double FaradayConstant = 96485; ///C/mol
                                          ///
-        public double Dpf = 1 * 0.0000000001; ///cm2/s 1 sluoksnis
-        public double Dpd = 1 * 0.0000001; ///cm2/s 2 sluosknis
+        public double Dpf = 1 * 0.0000000001; ///cm2/s 1 layer
+        public double Dpd = 1 * 0.0000001; ///cm2/s 2 layer
                                           //////
-        public double Dsf = 1 * 0.0000000001; ///cm2/s  1 sluoksnis                                ///
-        public double Dsd = 1 * 0.0000001; ///cm2/s  2 sluoksnis
+        public double Dsf = 1 * 0.0000000001; ///cm2/s  1 layer                                ///
+        public double Dsd = 1 * 0.0000001; ///cm2/s  2 layer
                                           ///
         public double d1;
         public double d2;

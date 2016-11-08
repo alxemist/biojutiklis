@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication8
+namespace BiosensorSensitivityCalculator
 {
     public class NewProduct : IProduct
     {
@@ -13,6 +13,7 @@ namespace ConsoleApplication8
         private SubstractFactory s;
         //private Constants c;
         private Constants2 c2;
+        // Constructor with conditions
         public NewProduct(Constants2 co2)
         {
             c2 = co2;
@@ -30,7 +31,7 @@ namespace ConsoleApplication8
             }
             
         }
-
+        // Calculates product at point between layers
         private double calculate(int j, double N, double h1, double h2)
         {
             double value;
@@ -48,6 +49,7 @@ namespace ConsoleApplication8
 
         }
 
+        // Product solution with membrane
         public double calculateOldProduct(int j)
         {
             try
@@ -84,7 +86,7 @@ namespace ConsoleApplication8
             }
         }
 
-
+        // Solution with membrane but with no flux of product through d1 and d2 boundary
         public double calculateProduct(int j)
         {
             try
@@ -120,6 +122,8 @@ namespace ConsoleApplication8
             }
         }
 
+
+        // Calculates product at layer d2
         public void calculate_d2(int j)
         {
             for (int i = Convert.ToInt32(c2.N2); i > 0; i--)
@@ -150,6 +154,7 @@ namespace ConsoleApplication8
             }
         }
 
+        // Calculates product at layer d1
         public void calculate_d1(int j)
         {
             Product val1;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication8
+namespace BiosensorSensitivityCalculator
 {
     public class SubstractFactory
     {
@@ -14,6 +14,7 @@ namespace ConsoleApplication8
         //private Dictionary<string, Substract> s3 = new Dictionary<string, Substract>();
         //private Constants c;
         public Constants2 c2;
+        // Constructor with conditions
         public SubstractFactory(Constants2 co2)
         {
             //c = constants;
@@ -33,6 +34,7 @@ namespace ConsoleApplication8
 
         }
 
+        // Gets substract using it's possition and layer
         public Substract getNewSubstract(Key key, int layer)
         {
             Substract substract = null;
@@ -47,6 +49,7 @@ namespace ConsoleApplication8
             return substract;
         }
 
+        // Calculates product at point between layers
         private double calculate(int j, double N, double h1, double h2)
         {
             double value;
@@ -64,7 +67,7 @@ namespace ConsoleApplication8
 
         }
 
-
+        // Substract solution
         public void calculateSubstract(int j)
         {
             /*try
@@ -105,6 +108,7 @@ namespace ConsoleApplication8
             }
         }
 
+        // Calculates substract at layer d2
         public void calculate_d2(int j)
         {
             for (int i = Convert.ToInt32(c2.N2); i > 0; i--)
@@ -132,6 +136,7 @@ namespace ConsoleApplication8
             }
         }
 
+        // Calculates substract at layer d1
         public void calculate_d1(int j)
         {
             for (int i = Convert.ToInt32(c2.N1); i >= 0; i--)

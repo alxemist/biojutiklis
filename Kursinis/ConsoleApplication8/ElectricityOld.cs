@@ -1,12 +1,12 @@
-﻿using ConsoleApplication8.AnalitiniaiSprendiniai;
-using ConsoleApplication8.ExportToExcel;
+﻿using BiosensorSensitivityCalculator.AnalyticCalculations;
+using BiosensorSensitivityCalculator.ExportToExcel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication8
+namespace BiosensorSensitivityCalculator
 {
     public class ElectricityOld
     {
@@ -21,15 +21,15 @@ namespace ConsoleApplication8
         }
         //private double calculateI(int j)
         //{
-        //    return c.ne * c.Dp * c.Faradejus * (p.getProduct(new Key(1, j)).Value-p.getProduct(new Key(0,j)).Value)/c.h;
+        //    return c.ne * c.Dp * c.FaradayConstant * (p.getProduct(new Key(1, j)).Value-p.getProduct(new Key(0,j)).Value)/c.h;
         //}
         //private double calculateI(int j, bool factor)
         //{
-        //    return c.ne * c.Dp * c.Faradejus * (p.getProduct(new Key(1, j), true).Value - p.getProduct(new Key(0, j), true).Value) / c.h;
+        //    return c.ne * c.Dp * c.FaradayConstant * (p.getProduct(new Key(1, j), true).Value - p.getProduct(new Key(0, j), true).Value) / c.h;
         //}
         private double calculate2(int j)
         {
-            return c2.ne * c2.Dpf * c2.Faradejus * (p.calculateOldProduct(j)) / c2.h1;
+            return c2.ne * c2.Dpf * c2.FaradayConstant * (p.calculateOldProduct(j)) / c2.h1;
         }
         public double calculate()
         {
@@ -70,8 +70,8 @@ namespace ConsoleApplication8
         }
         public double getAnalyticCalculation()
         {
-            ICalculator sprendinys = new AnalitinisSprendinys(c2);
-            return sprendinys.Calculate();
+            ICalculator solution = new AnalyticCalculation(c2);
+            return solution.Calculate();
         }
     }
 }
