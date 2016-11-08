@@ -1,3 +1,6 @@
 C:\Users\darbas\Documents\Visual Studio 2013\Projects\Kursinis\ConsoleApplication8\bin\Debug\ConsoleApplication8.exe.config
 C:\Users\darbas\Documents\Visual Studio 2013\Projects\Kursinis\ConsoleApplication8\obj\Debug\ConsoleApplication8.exe
 C:\Users\darbas\Documents\Visual Studio 2013\Projects\Kursinis\ConsoleApplication8\obj\Debug\ConsoleApplication8.pdb
+C:\Users\darbas\Desktop\Biosensor sensitivity\Kursinis\ConsoleApplication8\bin\Debug\ConsoleApplication8.exe.config
+C:\Users\darbas\Desktop\Biosensor sensitivity\Kursinis\ConsoleApplication8\obj\Debug\ConsoleApplication8.exe
+C:\Users\darbas\Desktop\Biosensor sensitivity\Kursinis\ConsoleApplication8\obj\Debug\ConsoleApplication8.pdb
